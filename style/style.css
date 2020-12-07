@@ -388,7 +388,7 @@ header .red:hover {
 
   font-family: DM Sans;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 24px;
   line-height: 31px;
   /* identical to box height */
@@ -404,7 +404,7 @@ header .red:hover {
 .footer span {
   font-family: DM Sans;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 14px;
   line-height: 26px;
   /* identical to box height, or 186% */
