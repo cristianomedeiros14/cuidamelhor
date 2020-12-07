@@ -7,8 +7,9 @@ body {
 }
 
 .header {
+  position: fixed;
   width: 100%;
-  height: 100px;
+  height: 70px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -26,6 +27,11 @@ header span {
   font-size: 16px;
   line-height: 26px;
 
+  color: #FFFFFF;
+}
+
+header a:hover {
+  text-decoration: underline;
   color: #FFFFFF;
 }
 
@@ -52,7 +58,12 @@ header .red:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(96, 218, 255, 0.53);
+
+  background-image: url("/assets/photo.jpg");
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: rgba(96, 218, 255, 0.53); */
 }
 
 .sectionOne h2 {
@@ -97,10 +108,6 @@ header .red:hover {
 .sectionTwoHeader {
   display: flex;
   flex-direction: row;
-}
-
-.sectionTwoHeader button {
-  /* padding: 0 70px 100px 0; */
 }
 
 #caregiver {
@@ -376,6 +383,37 @@ header .red:hover {
   color: #ffffff;
 }
 
+.footer div {
+  text-align: center;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: -0.292683px;
+}
+
+.footer div div img {
+  padding: 0 5px 5px 5px;
+}
+
+.footer span {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  /* identical to box height, or 186% */
+
+  text-align: center;
+  letter-spacing: 2px;
+  /* text-transform: uppercase; */
+}
+
 @media only screen and (max-width: 768px) {
   body {
     max-width: 768px;
@@ -383,7 +421,8 @@ header .red:hover {
   }
 
   .header {
-    height: 300px;
+    position: relative;
+    height: 240px;
     display: flex;
     flex-direction: column;
 
@@ -459,6 +498,13 @@ header .red:hover {
 
     padding-top: 30px;
   }
+
+  .sectionThreeBody form input {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+
   
   .sectionThreeHeader p {
     font-size: 16px;
@@ -470,7 +516,7 @@ header .red:hover {
   }
 
   .footer {
+    height: 220px;
     flex-direction: column;
   }
-
 }
