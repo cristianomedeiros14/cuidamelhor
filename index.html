@@ -7,27 +7,176 @@
   <meta name="author" content="Cuida Melhor">
   <meta name="keywords" content="cuidadores, idosos, pacientes, conexão">
   <meta name="description" content="Rede de conexão entre Cuidadores de Idosos e Pacientes!">
-  <title>Bolso Cheio - Obrigado!</title>
+  <title>Cuida Melhor</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/reset.css">
-  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+  <link rel="icon" href="assets/icon.png" type="image/x-icon">
 </head>
 
 <body>
-  <header>
+  <header class="header">
+    <img src="assets/logo.svg" alt="">
+    <div>
+      <span>Sobre</span>
+      <span>Para Cuidadores</span>
+      <span>Para pacientes</span>
+      <span>Blog</span>
+    </div>
+    <a href="#sectionThree"><span class="red">Quero me cadastrar</span></a>
   </header>
 
   <main>
+    <section class="sectionOne">
+      <h2>O jeito fácil para a contratação de cuidadores de idosos</h2>
+      <p>
+        Conectamos cuidadores com pessoas que precisam de cuidados através de 
+        uma plataforma que garante segurança e praticidade.
+      </p>
+    </section>
+
+    <section class="sectionTwo">
+      <div id="btndiv" class="sectionTwoHeader">
+        <button class="btn active" onclick="family()">Para Família</button>
+        <button class="btn" onclick="caregiver()">Para Cuidadores</button>
+      </div>
+      <div id="family" class="sectionTwoBody">
+        <div>
+          <img src="assets/money.png" alt="">
+          <span>Pagamento Facilitado</span>
+          <p>
+            Com a nossa plataforma, você escolhe se quer pagar por cartão de 
+            crédito, boleto ou depósito. Tudo de forma fácil!
+          </p>
+        </div>
+        <div>
+          <img src="assets/money.png" alt="">
+          <span>Controle de Cuidados</span>
+          <p>
+            Saiba exatamente quais ações foram tomadas com a pessoa que está sendo 
+            cuidada, desde o horário dos remédios até as atividades de higiene.
+          </p>
+        </div>
+        <div>
+          <img src="assets/money.png" alt="">
+          <span>Validação de Histórico</span>
+          <p>
+            Conheça o histórico de quem você está contratando, tendo confiança 
+            para um bom cuidado.
+          </p>
+        </div>
+      </div>
+      <div id="caregiver" class="sectionTwoBody">
+        <div>
+          <img src="assets/money.png" alt="">
+          <span>Escolha Quando Receber</span>
+          <p>
+            Aqui é possível decidir se quer receber o seu pagamento ao final de 
+            cada plantão, após 15 dias ou no final do mês. 
+          </p>
+        </div>
+        <div>
+          <img src="assets/money.png" alt="">
+          <span>Você Decide o Seu Preço</span>
+          <p>
+            Você pode definir e mudar o preço do seu serviço quando bem entender. 
+            Além disso, você pode definir preços diferentes para trabalhos 
+            noturnos, diurnos em feriados
+          </p>
+        </div>
+        <div>
+          <img src="assets/money.png" alt="">
+          <span>Perfil com Indicações</span>
+          <p>
+            Você pode registrar as suas indicações no seu perfil, reforçando o 
+            seu valor dentro do mercado.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sectionThree" class="sectionThree">
+      <div class="sectionThreeHeader">
+        <h2>
+          Quer se cadastrar para ter acesso em primeira mão quando a plataforma 
+          for lançada?
+        </h2>
+        <p>
+          Nosso objetivo é facilitar a conexão entre cuidadores e pessoas a serem 
+          cuidadas, de maneira fácil e segura.
+        </p>
+      </div>
+      <div class="sectionThreeBody">
+        <div id="btnsectionThree">
+          <button class="btnThree activeThree">quero contratar</button>
+          <button class="btnThree">sou cuidador</button>
+        </div>
+        <form method="POST" action="">
+          <p><b>*</b>Nome completo:</p>
+          <input 
+            name="name" 
+            type="text" 
+            pattern="^\D{2,}\s[\D\s]{2,}$" 
+            title="Digite seu nome completo" 
+            placeholder="Digite seu nome completo" 
+            required 
+          />
+          <p><b>*</b>E-mail:</p>
+          <input 
+            name="email" 
+            type="email" 
+            title="Digite um email válido" 
+            placeholder="Digite seu email"
+            required
+          />
+          <p><b>*</b>Celular:</p>
+          <input 
+            name="phone"
+            type="number"
+            title="Digite um telefone válido"
+            placeholder="Digite seu numero de telefone"
+            pattern="^\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}$"
+            required
+          />
+          <input type="submit" value="Quero me cadastrar" />
+        </form>
+        <h6>Mais de <b id="download">328</b> cadastros nas ultimas 48h</h6>
+    </section>
 
   </main>
 
-  <footer>
+  <footer class="footer">
+    <span>CuidaMelhor</span>
+    <span>TODOS OS DIREITOS RESERVADOS</span>
+    <div>
+      <div>
+        <img src="assets/Twitter.png" alt="">
+        <img src="assets/facebook.png" alt="">
+        <img src="assets/google.png" alt="">
+      </div>
+      <span>EMAIL@EMAIL.COM</span>
+    </div>
   </footer>
 </body>
+<script src="js/script.js"></script>
+<script type="text/javascript">
+  var download = 328;
 
+  window.onload(atualizaDownload());
+
+  function atualizaDownload() {
+    if (download % 2 == 0) {
+      download = download + 3;
+    } else {
+      download = download + 1;
+    }
+
+    document.getElementById("download").innerHTML = download;
+    setTimeout(atualizaDownload, 10000);
+  }
+</script>
 </html>
