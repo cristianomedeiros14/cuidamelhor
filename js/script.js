@@ -1,8 +1,6 @@
 function family() {
   var family = document.getElementById("family");
   var caregiver = document.getElementById("caregiver");
-  var health = document.getElementById("health");
-  var business = document.getElementById("business");
   if ((family.style.display = "none")) {
     family.style.display = "flex";
     caregiver.style.display = "none";
@@ -12,8 +10,6 @@ function family() {
 function caregiver() {
   var family = document.getElementById("family");
   var caregiver = document.getElementById("caregiver");
-  var health = document.getElementById("health");
-  var business = document.getElementById("business");
   if ((caregiver.style.display = "none")) {
     family.style.display = "none";
     caregiver.style.display = "flex";
